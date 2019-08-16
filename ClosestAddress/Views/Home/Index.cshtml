@@ -1,0 +1,19 @@
+﻿
+<form style="margin-top:50px;">
+    <div class="form-group">
+        <label for="Search">Search Address:</label>
+        <input id="pac-input" class="controls" type="text" placeholder="Search Box" required>
+        <button value="Search" id="search-button">Search</button>
+        <div id="map"></div>
+    </div>
+</form>
+<div class="error">
+</div>
+<div class="loader" style="display:none"></div>
+<table id="records_table" style="border:2px solid black" border="1">
+
+</table>
+<link href="~/Styles/global.css" rel="stylesheet" />
+<script src="~/Scripts/external/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-lBvL-c_VGFUeKStpXYUWsmJgprWw-BM&libraries=places&callback=initAutocomplete"
+        async defer></script>
